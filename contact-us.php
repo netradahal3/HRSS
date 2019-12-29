@@ -145,6 +145,7 @@ $error="Something went wrong. Please try again";
           </form>
         </div>
       </div>
+
       <div class="col-md-6">
         <h3>Contact Info</h3>
         <div class="contact_detail">

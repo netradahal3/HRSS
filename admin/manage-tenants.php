@@ -10,7 +10,7 @@
     if(isset($_REQUEST['del']))
 	{
     $delid=intval($_GET['del']);
-    $sql = "delete from tblroom_detail  WHERE  id=:delid";
+    $sql = "delete from tblroomdetail  WHERE  id=:delid";
     $query = $dbh->prepare($sql);
     $query -> bindParam(':delid',$delid, PDO::PARAM_STR);
     $query -> execute();
@@ -105,11 +105,10 @@
                         </tfoot>
                         <tbody>
                           <?php
-                          $sql = "SELECT rd.ROOMTITLE,h.HouseName,f.FloorName,rd.HouseOverView,
-                                  rd.PricePerMonth,rd.BuildingYear,rd.TenantsCapacity
-                                  FROM tblroomdetail rd
-                                  INNER JOIN tblhouse h ON h.id=rd.HouseName
-                                  INNER JOIN tblfloor f ON f.id=rd.FloorName";
+                          $sql = "SELECT tblroomdetail.*,tblhouse.HouseName,tblfloor.FloorName,tblhouse.id as hid,tblfloor.id as fid
+                                  FROM tblroomdetail
+                                  JOIN tblhouse ON tblhouse.id=tblroomdetail.HouseName
+                                  JOIN tblfloor ON tblfloor.id=tblroomdetail.FloorName";
 
 
 

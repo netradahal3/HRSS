@@ -3819,12 +3819,12 @@ table.info-tabel tr td {
 	overflow:hidden;
 	position:relative;
 }
-.vehicle_img {
+.room_img {
   float: left;
   margin-right: 22px;
   width: 22%;
 }
-.vehicle_img img {
+.room_img img {
 	max-width:100%;
 }
 .my_vehicles_list ul.vehicle_listing li a {
@@ -3835,12 +3835,12 @@ table.info-tabel tr td {
   padding: 12px 0;
   width: 40%;
 }
-.vehicle_status {
+.room-status {
   float: right;
   text-align: right;
   width: 25%;
 }
-.vehicle_status a i {
+.room-status a i {
 	margin:10px 0 0 8px;
 	color:#555;
 	font-size:18px
@@ -4883,14 +4883,14 @@ h3 {
 	float:none;
 	width:100%;
 }
-.vehicle_img {
+.room_img {
   width: 40%;
   margin-right:5%;
 }
 .vehicle_title {
   width: 55%;
 }
-.vehicle_status {
+.room-status {
   clear: both;
   float: none;
   padding-top: 15px;

@@ -90,7 +90,7 @@
 					}
 				</style>
 			</head>
-			<body>
+		<body>
 					<!-- Start Switcher -->
 					<?php include('includes/colorswitcher.php');?>
 					<!-- /Switcher -->
@@ -98,6 +98,7 @@
 					<!--Header-->
 					<?php include('includes/header.php');?>
 					<!-- /Header -->
+					<!-- page header start-->
 					<section class="page-header profile_page">
 					  <div class="container">
 					    <div class="page-header_wrap">
@@ -113,54 +114,53 @@
 					  <!-- Dark Overlay-->
 					  <div class="dark-overlay"></div>
 					</section>
+					<!-- page header start-->
+
+					<section class="contact_us section-padding">
+					  <div class="container">
+					    <div  class="row">
+								<div class="col-md-6">
+									<h3> send complaint using the form below</h3>
+										<?php if($error){?>
+											<div class="errorWrap">
+												<strong>ERROR</strong>:<?php echo htmlentities($error); ?>
+											</div><?php }
+				        				else if($msg){?>
+											<div class="succWrap">
+												<strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?>
+											</div><?php }?>
+											<div class="contact_form gray-bg">
+												<form action="" method="post">
+										  		<div class="row">
+											  	    <div class="col-6">
+												  	  		<div class="form-group">
+																    <label for="name">Apartment No/Name Room No/Name</label>
+																    <input type="text" class="form-control" id="name" placeholder="Full Name" name="name" required>
+																    <input type="hidden" name="user_id" value="<?php echo $_SESSION['EmailId']; ?>">
+																    <input type="hidden" name="fullname" value="<?php echo $_SESSION['fullname']; ?>">
+													  			</div>
+															</div>
+													<div class="col-6">
+													  <div class="form-group">
+													    <label for="cmp">Complaint</label>
+													    <input type="text" class="form-control" id="cmp" placeholder="Text" name="cmp" required>
+													  </div>
+												    </div>
+											   </div>
+
+											  <button type="submit" class="btn btn-primary" name='register' value="register">Submit</button>
+											</form>
+
+											</div>
+								</div>
+								<div class="col-md-6">
+									<h3> view complaint reply below</h3>
 
 
-
-
-
-
-
-
-
-
-
-
-	
-<section class="wrapper" style="margin-left: 16%;margin-top: -23%;">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-			<?php
-				if(isset($errMsg)){
-					echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
-				}
-			?>
-			<h2>Complaints</h2>
-				<form action="" method="post">
-			  		<div class="row">
-				  	    <div class="col-6">
-					  	  <div class="form-group">
-						    <label for="name">Apartment No/Name Room No/Name</label>
-						    <input type="text" class="form-control" id="name" placeholder="Full Name" name="name" required>
-						    <input type="hidden" name="user_id" value="<?php echo $_SESSION['username']; ?>">
-						    <input type="hidden" name="fullname" value="<?php echo $_SESSION['fullname']; ?>">
-						  </div>
+								</div>
+							</div>
 						</div>
-						<div class="col-6">
-						  <div class="form-group">
-						    <label for="cmp">Complaint</label>
-						    <input type="text" class="form-control" id="cmp" placeholder="Text" name="cmp" required>
-						  </div>
-					    </div>
-				   </div>
-
-				  <button type="submit" class="btn btn-primary" name='register' value="register">Submit</button>
-				</form>
-			</div>
-		</div>
-	</div>
-</section>
-
+					</section>
 
 			<!--Footer -->
 				<?php include('includes/footer.php');?>

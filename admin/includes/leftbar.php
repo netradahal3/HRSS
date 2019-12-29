@@ -36,13 +36,15 @@
 				<ul>
 					<li><a href="create-room.php">Create Room</a></li>
 					<li><a href="manage-room.php">Manage Room</a></li>
+					<li><a href="post-tenants.php">Post a Rooms</a></li>
+					<li><a href="manage-tenants.php">Manage Rooms</a></li>
 				</ul>
 			</li>
 
-<li><a href="#"><i class="fa fa-sitemap"></i> Rooms Details</a>
+			<li><a href="#"><i class="fa fa-sitemap"></i> Complaints</a>
 					<ul>
-						<li><a href="post-tenants.php">Post a Rooms</a></li>
-						<li><a href="manage-tenants.php">Manage Rooms</a></li>
+						<li><a href="view-complaints.php">View Complaints</a></li>
+						<li><a href="reply-complaints.php">Reply complaints</a></li>
 					</ul>
 				</li>
 				<li><a href="manage-Request.php"><i class="fa fa-users"></i> Manage Request</a></li>

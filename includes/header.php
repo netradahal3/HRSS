@@ -80,14 +80,14 @@ foreach($results as $result)
            <?php if($_SESSION['login']){?>
             <li><a href="profile.php">Profile Settings</a></li>
               <li><a href="update-password.php">Update Password</a></li>
-            <li><a href="my-booking.php">My Booking</a></li>
+            <li><a href="my-request.php">My Request</a></li>
             <li><a href="post-testimonial.php">Post a Testimonial</a></li>
           <li><a href="my-testimonials.php">My Testimonial</a></li>
             <li><a href="logout.php">Sign Out</a></li>
             <?php } else { ?>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Profile Settings</a></li>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Update Password</a></li>
-            <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">My Booking</a></li>
+            <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">My Request</a></li>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Post a Testimonial</a></li>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">My Testimonial</a></li>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Sign Out</a></li>
