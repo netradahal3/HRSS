@@ -112,7 +112,6 @@
 					  <div class="dark-overlay"></div>
 					</section>
 					<!-- page header start-->
-
 					<section class="contact_us section-padding">
 					  <div class="container">
 					    <div  class="row">
@@ -144,42 +143,31 @@
 													  </div>
 												    </div>
 											   </div>
-
 											  <button type="submit" class="btn btn-primary" name='register' value="register">Submit</button>
 											</form>
-
 											</div>
 								</div>
 								<div class="col-md-6">
 									<h3> view complaint reply below</h3>
-
-
 								</div>
 							</div>
 						</div>
 					</section>
-
 			<!--Footer -->
 				<?php include('includes/footer.php');?>
 				<!-- /Footer-->
-
 				<!--Back to top-->
 				<div id="back-top" class="back-top"> <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i> </a> </div>
 				<!--/Back to top-->
-
 				<!--Login-Form -->
 				<?php include('includes/login.php');?>
 				<!--/Login-Form -->
-
 				<!--Register-Form -->
 				<?php include('includes/registration.php');?>
-
 				<!--/Register-Form -->
-
 				<!--Forgot-password-Form -->
 				<?php include('includes/forgotpassword.php');?>
 				<!--/Forgot-password-Form -->
-
 				<!-- Scripts -->
 				<script src="assets/js/jquery.min.js"></script>
 				<script src="assets/js/bootstrap.min.js"></script>
@@ -191,7 +179,6 @@
 				<!--Slider-JS-->
 				<script src="assets/js/slick.min.js"></script>
 				<script src="assets/js/owl.carousel.min.js"></script>
-
 			</body>
 </html>
 <?php } ?>
