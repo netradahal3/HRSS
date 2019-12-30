@@ -16,7 +16,6 @@
 			$username = $_POST['user_id'];
 			$fullname = $_POST['fullname'];
 
-
 					$sql ="INSERT INTO tblcmps(name,cmp,username,FullName) values(:name,:cmp,:username,:fullname)";
 					$query= $dbh -> prepare($sql);
 					$query->bindParam(':name',$name,PDO::PARAM_STR);
@@ -34,8 +33,6 @@
 					{
 					$error="Something went wrong. Please try again";
 					}
-
-
 		}
 ?>
 
