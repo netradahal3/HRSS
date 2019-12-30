@@ -17,7 +17,7 @@
 			$fullname = $_POST['fullname'];
 
 
-					$sql ="INSERT INTO tblcmps(name,cmp,username,fullname) values(:name,:cmp,:username,:fullname)";
+					$sql ="INSERT INTO tblcmps(name,cmp,username,FullName) values(:name,:cmp,:username,:fullname)";
 					$query= $dbh -> prepare($sql);
 					$query->bindParam(':name',$name,PDO::PARAM_STR);
 					$query->bindParam(':cmp',$cmp,PDO::PARAM_STR);

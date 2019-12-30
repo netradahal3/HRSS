@@ -1,4 +1,4 @@
-	<nav class="ts-sidebar">
+<nav class="ts-sidebar">
 		<ul class="ts-sidebar-menu">
 			<li class="ts-label">Main</li>
 				<!-- add dashboard in left side nav -->

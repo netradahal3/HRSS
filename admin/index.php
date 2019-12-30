@@ -62,11 +62,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 
 									<label for="" class="text-uppercase text-sm">Password</label>
 									<input type="password" placeholder="Password" name="password" class="form-control mb">
-
-
-
 									<button class="btn btn-primary btn-block" name="login" type="submit">LOGIN</button>
-
 								</form>
 							</div>
 						</div>

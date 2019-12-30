@@ -121,11 +121,8 @@ foreach($results as $result)
 											<div class="hr-dashed"></div>
 
 										<?php }} ?>
-
-
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-4">
-
 													<button class="btn btn-primary" name="submit" type="submit">Submit</button>
 												</div>
 											</div>

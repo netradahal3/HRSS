@@ -94,7 +94,7 @@
   <div class="container">
     <div class="user_profile_info gray-bg padding_4x4_40">
       <div class="upload_user_logo">
-        <img src="assets/images/dealer-logo.jpg" alt="image">
+        <img src="assets/images/dealer-logo.png" alt="image">
       </div>
       <div class="dealer_info">
         <h5><?php echo htmlentities($result->FullName);?></h5>
@@ -108,7 +108,7 @@
 
       <div class="col-md-6 col-sm-8">
         <div class="profile_wrap">
-          <h5 class="uppercase underline">My Booikngs </h5>
+          <h5 class="uppercase underline">My Request respond </h5>
           <div class="my_vehicles_list">
             <ul class="vehicle_listing">
                 <?php
