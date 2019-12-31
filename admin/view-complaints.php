@@ -70,7 +70,7 @@
           									<thead>
           										<tr>
           										<th>#</th>
-          												<th>Name</th>
+          												<th>Name of house/floor</th>
           											<th>Complaint</th>
           											<th>Full Name</th>
                                 <th> Send Time</th>
@@ -80,7 +80,7 @@
                             <tfoot>
           										<tr>
           										 <th>#</th>
-                               <th>Name</th>
+                               <th>Name of house/floor</th>
           											<th>Complaints</th>
           											<th>Full Name</th>
           											<th>Send Time</th>

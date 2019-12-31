@@ -43,7 +43,6 @@ $msg="Testimonial Successfully Active";
 
 <head>
 	<?php include('includes/head.php');?>
-
 	<title>House Rental System |Admin Manage testimonials   </title>
   <style>
 		.errorWrap {
