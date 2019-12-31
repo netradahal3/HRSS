@@ -32,25 +32,9 @@ $error="Something went wrong. Please try again";
   <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<?php include('includes/head.php');?>
- <style>
-    .errorWrap {
-    padding: 10px;
-    margin: 0 0 20px 0;
-    background: #fff;
-    border-left: 4px solid #dd3d36;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-}
-.succWrap{
-    padding: 10px;
-    margin: 0 0 20px 0;
-    background: #fff;
-    border-left: 4px solid #5cb85c;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-}
-    </style>
+  <?php include('includes/head.php');?>
+  <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+
 </head>
 <body>
 
@@ -94,7 +78,7 @@ foreach($results as $result)
 <section class="user_profile inner_pages">
   <div class="container">
     <div class="user_profile_info gray-bg padding_4x4_40">
-      <div class="upload_user_logo"> <img src="assets/images/dealer-logo.jpg" alt="image">
+      <div class="upload_user_logo"> <img src="assets/images/dealer-logo.png" alt="image">
       </div>
 
       <div class="dealer_info">

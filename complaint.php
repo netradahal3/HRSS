@@ -7,9 +7,6 @@
 	header('location:index.php');
 	}
 	else{
-
-	// if(empty($_SESSION['username']))
-	// 	header('Location: index.php');
 		if(isset($_POST['register'])) {
 			$name = $_POST['name'];
 			$cmp = $_POST['cmp'];
@@ -39,26 +36,9 @@
 
 <!DOCTYPE HTML>
 <html lang="en">
-		<head>
-			<?php include('includes/head.php');?>
-			<style>
-				.errorWrap {
-					padding: 10px;
-					margin: 0 0 20px 0;
-					background: #fff;
-					border-left: 4px solid #dd3d36;
-					-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-					box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-				}
-				.succWrap{
-					padding: 10px;
-					margin: 0 0 20px 0;
-					background: #fff;
-					border-left: 4px solid #5cb85c;
-					-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-					box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-					}
-				</style>
+			<head>
+					<?php include('includes/head.php');?>
+					<link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 			</head>
 		<body>
 					<!-- Start Switcher -->
