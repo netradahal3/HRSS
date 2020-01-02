@@ -45,7 +45,7 @@ $msg="request Successfully Confirmed";
 	<?php include('includes/head.php');?>
 	<title>House Rental System |Manage Request   </title>
 
-	
+
   <style>
 		.errorWrap {
     padding: 10px;
@@ -180,15 +180,7 @@ echo htmlentities('Confirmed');
 	</div>
 
 	<!-- Loading Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap-select.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.dataTables.min.js"></script>
-	<script src="js/dataTables.bootstrap.min.js"></script>
-	<script src="js/Chart.min.js"></script>
-	<script src="js/fileinput.js"></script>
-	<script src="js/chartData.js"></script>
-	<script src="js/main.js"></script>
+<?php include('includes/head.php');?>
 </body>
 </html>
 <?php } ?>

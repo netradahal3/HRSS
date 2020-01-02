@@ -106,38 +106,22 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->FloorName);?></td>
 											<td><?php echo htmlentities($result->CreationDate);?></td>
 											<td><?php echo htmlentities($result->UpdationDate);?></td>
-<td><a href="edit-floor.php?id=<?php echo $result->id;?>"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
-<a href="manage-floor.php?del=<?php echo $result->id;?>" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
+											<td><a href="edit-floor.php?id=<?php echo $result->id;?>"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
+											<a href="manage-floor.php?del=<?php echo $result->id;?>" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
 										</tr>
 										<?php $cnt=$cnt+1; }} ?>
-
 									</tbody>
 								</table>
-
-
-
 							</div>
 						</div>
-
-
-
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
 
 	<!-- Loading Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap-select.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.dataTables.min.js"></script>
-	<script src="js/dataTables.bootstrap.min.js"></script>
-	<script src="js/Chart.min.js"></script>
-	<script src="js/fileinput.js"></script>
-	<script src="js/chartData.js"></script>
-	<script src="js/main.js"></script>
+	<?php include('includes/head.php');?>
 </body>
 </html>
 <?php } ?>
