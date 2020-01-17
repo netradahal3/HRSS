@@ -13,7 +13,7 @@
 			$username = $_POST['user_id'];
 			$fullname = $_POST['fullname'];
 
-					$sql ="INSERT INTO tblcmps(name,cmp,username,FullName) values(:name,:cmp,:username,:fullname)";
+					$sql ="INSERT INTO tblcmps(name,cmp,username,fullname) values(:name,:cmp,:username,:fullname)";
 					$query= $dbh -> prepare($sql);
 					$query->bindParam(':name',$name,PDO::PARAM_STR);
 					$query->bindParam(':cmp',$cmp,PDO::PARAM_STR);
@@ -24,7 +24,7 @@
 					$lastInsertId = $dbh->lastInsertId();
 					if($lastInsertId)
 					{
-					$msg="Testimonail submitted successfully";
+					$msg="complaints submitted successfully";
 					}
 					else
 					{
@@ -86,7 +86,7 @@
 																    <label for="name">Apartment No/Name Room No/Name</label>
 																    <input type="text" class="form-control" id="name" placeholder="Full Name" name="name" required>
 																    <input type="hidden" name="user_id" value="<?php echo $_SESSION['EmailId']; ?>">
-																    <input type="hidden" name="fullname" value="<?php echo $_SESSION['fullname']; ?>">
+																    <input type="hidden" name="fullname" value="<?php echo $_SESSION['FullName']; ?>">
 													  			</div>
 															</div>
 													<div class="col-6">
